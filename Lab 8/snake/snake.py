@@ -39,7 +39,7 @@ while True:
     if snake[-1] == apple:
         apple = randrange(0, RES, SIZE), randrange(0, RES, SIZE)
         length += 1
-        score +=1
+        score += 1
         fps += 1
     # game over
     if x < 0 or x > RES - SIZE or y < 0 or y > RES - SIZE or len(snake) != len(set(snake)):

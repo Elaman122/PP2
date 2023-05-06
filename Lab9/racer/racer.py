@@ -110,7 +110,7 @@ while True:
         DISPLAYSURF.blit(entity.image, entity.rect)
         
     if pygame.sprite.spritecollideany(P1, enemies):
-        pygame.mixer.Sound().play()
+        pygame.mixer.Sound("crash.mp3").play()
         time.sleep(1)
                    
         DISPLAYSURF.fill(RED)
